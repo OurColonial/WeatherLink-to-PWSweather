@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+    <title>Davis WeatherLink to PWSweather API Parameter Mapping</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h1>PWSweather to Davis WeatherLink API Key Mapping</h1>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">PWSWeather</th>
+                            <th scope="col">Davis WeatherLink</th>
+                            <th scope="col">Required</th>
+                            <th scope="col">Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>ID</td>
+                            <td>Station ID As Registered</td>
+                            <td>YES</td>
+                            <td>Station ID as registered</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>PASSWORD</td>
+                            <td>API KEY</td>
+                            <td>YES</td>
+                            <td>Station specific API Key from Admin page</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>dateutc</td>
+                            <td>Current UTC Date</td>
+                            <td>YES</td>
+                            <td>Date and time in the format of year-mo-da+hour:min:sec</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>winddir</td>
+                            <td>wind_dir_last</td>
+                            <td>NO</td>
+                            <td>Wind direction in degrees</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>windspeedmph</td>
+                            <td>wind_speed_last</td>
+                            <td>NO</td>
+                            <td>Wind speed in miles per hour</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>windgustmph</td>
+                            <td>wind_dir_at_hi_speed_last_10_min</td>
+                            <td>NO</td>
+                            <td>Wind gust in miles per hour</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>tempf</td>
+                            <td>temp</td>
+                            <td>NO</td>
+                            <td>Temperature in degrees fahrenheit</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>rainin</td>
+                            <td>rainfall_last_60_min</td>
+                            <td>NO</td>
+                            <td>Hourly rain in inches</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>dailyrainin</td>
+                            <td>rainfall_last_24_hr</td>
+                            <td>NO</td>
+                            <td>Daily rain in inches</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>monthrainin</td>
+                            <td>NULL</td>
+                            <td>NO</td>
+                            <td>Monthly rain in inches</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>yearrainin</td>
+                            <td>NULL</td>
+                            <td>NO</td>
+                            <td>Seasonal rain in inches (usually local meteorological year)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>baromin</td>
+                            <td>bar_sea_level</td>
+                            <td>NO</td>
+                            <td>Barometric pressure in inches</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>dewptf</td>
+                            <td>dew_point</td>
+                            <td>NO</td>
+                            <td>Dew point in degrees fahrenheit</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>humidity</td>
+                            <td>hum</td>
+                            <td>NO</td>
+                            <td>Humidity in percent</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>weather</td>
+                            <td>NULL</td>
+                            <td>NO</td>
+                            <td>Current weather or sky conditions using standard METAR abbreviations and intensity (e.g. -RA, +SN, SKC, etc.)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>solarradiation</td>
+                            <td>solar_rad</td>
+                            <td>NO</td>
+                            <td>Solar radiation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>UV</td>
+                            <td>uv_index</td>
+                            <td>NO</td>
+                            <td>UV</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>softwaretype</td>
+                            <td>DavisWeatherLinkLive</td>
+                            <td>YES</td>
+                            <td>Software type</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>action</td>
+                            <td>updateraw</td>
+                            <td>YES</td>
+                            <td>always concludes with action=updateraw to indicate the end of the readings</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <h3>Example API URL</h3>
+                    <p>https://pwsupdate.pwsweather.com/api/v1/submitwx?ID=STATIONID&PASSWORD=password&dateutc=2000-12-01+15:20:01&winddir=225&windspeedmph=0.0&windgustmph=0.0&tempf=34.88&rainin=0.06&dailyrainin=0.06&monthrainin=1.02&yearrainin=18.26&baromin=29.49&dewptf=30.16&humidity=83&weather=OVC&solarradiation=183&UV=5.28&softwaretype=Examplever1.1&action=updateraw
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
