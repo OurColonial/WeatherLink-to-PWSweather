@@ -72,7 +72,9 @@ def upload_to_pwsweather(StationID, API_Key, response):
 
     # Send the payload to PWSweather
     p = requests.post(upload_url, data=payload)
-    print(str(utc) + "\t" + p.text)
+    print(str(utc) + "\tStatus Code: " + str(p.status_code) + "\tText:" + p.text, end='')
+
+    return p.status_code
 
 # Main Function
 def main(): 
@@ -83,17 +85,18 @@ def main():
     args = parser.parse_args()
 
     # Check for required environment variables, Station ID & APIKey
-    WeatherlinkLocalIP = args.WeatherlinkIP
-    UploadInterval = args.Interval
+    WeatherlinkLocalIP = str(args.WeatherlinkIP)
+    UploadInterval = float(args.Interval)
 
-    # Get API Key and Station ID from local Environment Variables
-    PWSWeatherStationID = os.getenv('PWSweatherStationID')
-    PWSWeatherAPIKey = os.getenv('PWSWeatherAPIKey')
-
-    # Check if the Envronment variables are set
-    if len(str(PWSWeatherStationID)) <= 0 or PWSWeatherStationID == None:
+    # Check if the Environment variables are set, if they are set them
+    if "PWSWeatherStationID" in os.environ:
+        PWSWeatherStationID = str(os.environ.get('PWSweatherStationID'))
+    else:
         sys.exit("\nPWSweather Station ID Not Found!\nPlease set Environment Variable PWSWeatherStationID to the Station ID of your PWSweather Station.\n")
-    elif len(str(PWSWeatherAPIKey)) <= 0 or PWSWeatherAPIKey == None:
+
+    if "PWSWeatherAPIKey" in os.environ: 
+        PWSWeatherAPIKey = str(os.environ.get('PWSWeatherAPIKey'))
+    else:
         sys.exit("\nAPI Key Not Found!\n\nPlease set Environment Variable PWSWeatherAPIKey to the value of your PWSWeather API Key.\nYour API Key can be found at https://dashboard.pwsweather.com\n")
 
     while True: 
@@ -101,7 +104,8 @@ def main():
         response = get_current_conditions(WeatherlinkLocalIP)
 
         # Map the weatherlink data to PWSweather and upload
-        upload_to_pwsweather(PWSWeatherStationID, PWSWeatherAPIKey, response)
+        if upload_to_pwsweather(PWSWeatherStationID, PWSWeatherAPIKey, response) != 200:
+            sys.exit("\nUnable to Post to PWSweather, Please see console error message.\n")
 
         # Wait the specified time interval before querying the API again
         time.sleep(UploadInterval)
