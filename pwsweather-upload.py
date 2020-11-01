@@ -89,18 +89,16 @@ def main():
     UploadInterval = float(args.Interval)
 
     # Check if the Environment variables are set, if they are set them
-    if "PWSWeatherStationID" in os.environ:
-        PWSWeatherStationID = str(os.getenv('PWSweatherStationID'))
+    if 'PWSWeatherStationID' in os.environ:
+        PWSWeatherStationID = os.environ.get('PWSWeatherStationID')
     else:
         sys.exit("\nPWSweather Station ID Not Found!\nPlease set Environment Variable PWSWeatherStationID to the Station ID of your PWSweather Station.\n")
 
     if "PWSWeatherAPIKey" in os.environ: 
-        PWSWeatherAPIKey = str(os.getenv('PWSWeatherAPIKey'))
+        PWSWeatherAPIKey = str(os.environ.get('PWSWeatherAPIKey'))
     else:
         sys.exit("\nAPI Key Not Found!\n\nPlease set Environment Variable PWSWeatherAPIKey to the value of your PWSWeather API Key.\nYour API Key can be found at https://dashboard.pwsweather.com\n")
 
-    print(PWSWeatherStationID)
-    print(PWSWeatherAPIKey)
     while True: 
         # get the response from the local Weatherlink API
         response = get_current_conditions(WeatherlinkLocalIP)
