@@ -51,7 +51,7 @@ def upload_to_pwsweather(StationID, API_Key, response):
         'dateutc' : utc,
         'winddir' : response[0]["wind_dir_last"],
         'windspeedmph' : response[0]["wind_speed_last"],
-        'windgustmph' : response[0]["wind_dir_at_hi_speed_last_10_min"],
+        'windgustmph' : response[0]["wind_speed_hi_last_10_min"],
         'tempf' : response[0]["temp"],
         'rainin' : response[0]["rainfall_last_60_min"],
         'dailyrainin' : response[0]["rainfall_last_24_hr"],
