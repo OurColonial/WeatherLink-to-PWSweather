@@ -1,1 +1,72 @@
-<mxfile host="app.diagrams.net" modified="2020-11-03T18:34:32.871Z" agent="5.0 (Macintosh)" version="13.8.9" etag="7MRzL-o_-xgupaK54mfd" type="github"><diagram id="lVFv-xqAPD7Mdsg4RK_y">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-11-03T18:52:49.663Z" agent="5.0 (Macintosh)" etag="-3Np62o7WZXFYy3qrGud" version="13.8.9" type="github">
+  <diagram id="lVFv-xqAPD7Mdsg4RK_y" name="Page-1">
+    <mxGraphModel dx="1266" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="70" y="300" width="320" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-4" value="PWSweather.com" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/web-development-5/500/api-code-window-128.png" vertex="1" parent="1">
+          <mxGeometry x="270" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=32;fontFamily=Courier New;" edge="1" parent="1" source="HFlEzKrJ6p1ZfQxqMHJ5-6" target="HFlEzKrJ6p1ZfQxqMHJ5-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-23" value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=32;fontFamily=Courier New;" vertex="1" connectable="0" parent="HFlEzKrJ6p1ZfQxqMHJ5-8">
+          <mxGeometry x="-0.2377" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-6" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="161.11" height="101.5" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-7" value="&lt;div style=&quot;font-size: 17px;&quot;&gt;Public&lt;/div&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;Internet&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="80.56" y="145.75" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-9" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.davisinstruments.com/wp-content/themes/davis/assets/images/pages/wll/wll_01.png;" vertex="1" parent="1">
+          <mxGeometry x="240" y="310" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-10" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/web-development-5/500/api-code-window-128.png;" vertex="1" parent="1">
+          <mxGeometry x="261.11" y="410" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=17;" edge="1" parent="1" source="HFlEzKrJ6p1ZfQxqMHJ5-12" target="HFlEzKrJ6p1ZfQxqMHJ5-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-17" value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=32;fontFamily=Courier New;" vertex="1" connectable="0" parent="HFlEzKrJ6p1ZfQxqMHJ5-14">
+          <mxGeometry x="0.1335" y="4" relative="1" as="geometry">
+            <mxPoint x="3.97" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-29" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontFamily=Courier New;fontSize=18;" edge="1" parent="1" source="HFlEzKrJ6p1ZfQxqMHJ5-12" target="HFlEzKrJ6p1ZfQxqMHJ5-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-30" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=32;fontFamily=Courier New;" vertex="1" connectable="0" parent="HFlEzKrJ6p1ZfQxqMHJ5-29">
+          <mxGeometry x="0.1468" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-12" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/272_Raspberry_Pi_logo-128.png;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="85.56" y="345" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=32;entryX=1;entryY=0.25;entryDx=0;entryDy=0;curved=1;fontFamily=Courier New;fontStyle=0" edge="1" parent="1" source="HFlEzKrJ6p1ZfQxqMHJ5-10" target="HFlEzKrJ6p1ZfQxqMHJ5-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130.55999999999995" y="355" as="sourcePoint" />
+            <mxPoint x="130.55500000000006" y="141.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-19" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=32;fontFamily=Courier New;fontStyle=0" vertex="1" connectable="0" parent="HFlEzKrJ6p1ZfQxqMHJ5-18">
+          <mxGeometry x="0.1335" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-24" value="WeatherLink " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="230" y="450" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HFlEzKrJ6p1ZfQxqMHJ5-25" value="Script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="80.56" y="450" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
