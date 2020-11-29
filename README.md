@@ -19,10 +19,10 @@ If the software or station you are using does not support a parameter other than
 #### Full PWSWeather Parameter List
 
 | Parameter      | Parameter Description                                      |
-|:--------------:|:----------------------------------------------------------:|
+|---------------:|------------------------------------------------------------|
 | ID             | Station ID as registered                                   |
 | PASSWORD       | Station Specific API Key From The PWSWeather Admin page    |
-| dateutc        | Date & Time in The Format of year-mo-da+hour:min:sec     |
+| dateutc        | Date & Time in The Format of year-mo-da+hour:min:sec       |
 | winddir        | Wind Direction in Degrees from North                       |
 | windspeedmph   | Current Wind Speed in Miles Per Hour (mph)                 |
 | windgustmph    | Wind Gust Speed in Miles Per Hour (mph)                    |
